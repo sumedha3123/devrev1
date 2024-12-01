@@ -31,21 +31,21 @@ This project uses a Hugging Face pre-trained model to detect customer frustratio
 bash
 git clone https://github.com/your-username/customer-frustration-alert.git
 cd customer-frustration-alert
+
 2. Install Dependencies
 bash
-
 pip install -r requirements.txt
-3. Configure Environment Variables
+
+4. Configure Environment Variables
 Create a .env file to store sensitive data:
-
 bash
-
 HUGGING_FACE_API_KEY=your_hugging_face_api_key
 DEVREV_WEBHOOK_URL=https://your-devrev-webhook-url
 THRESHOLD=0.75
 HUGGING_FACE_API_KEY: API key for Hugging Face.
 DEVREV_WEBHOOK_URL: Webhook URL from DevRev.
 THRESHOLD: Confidence threshold for detecting frustration.
+
 4. Run the Application
 bash
 python app.py
